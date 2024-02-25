@@ -1,0 +1,102 @@
+body{
+    background:rgb(217, 242, 244);
+}
+
+
+.menu{
+    font-size:xx-large;
+}
+
+.what{
+    position: fixed;
+    top: 93%;
+    left:1%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.foll{
+
+position: fixed;
+top: 93%;
+right: 1%;   
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+
+@keyframes pop {
+
+    0% {
+        transform: scale(1);
+        transition: 0.1s;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.followw{
+    position: fixed;
+    right: 1%;   
+    top: 80%;
+    width: 60px;
+    height: 60px;
+    animation-name: pop;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    transition: 1s;
+
+}
+
+
+
+.follo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(13,202,240);
+}
+
+.shadow{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.mypic{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all ease-in-out 0.7s;
+
+}
+.mypic:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 0.7s;
+}
+
+@media screen  and (max-width:672px) {
+
+.what, .foll, .followw  {
+    display: none;
+}
+
+
+}
+
+
+.text{
+    position: absolute;
+    top: 90%;
+    right:5%;
+}
+.picss{
+    position: relative;
+}
